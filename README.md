@@ -74,8 +74,8 @@ This project is conducted solely for academic purposes and follows institutional
 
 ## Repository Contents
 
-- **research/** – Thesis proposal documents and presentation slides
-
+- **research/** – Research Documentation: Early research materials, including the initial proposal and refined research plan
+  
 ---
 
 ## Technologies Used
