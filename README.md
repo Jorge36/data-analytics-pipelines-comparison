@@ -17,9 +17,9 @@ The study focuses on performance, scalability, and cost-efficiency across file f
 
 The primary objectives of this research are:
 
-- To evaluate the performance, scalability, and cost-efficiency of traditional analytics tools (Pandas, Pandas SQL, Scikit-learn) versus distributed big-data frameworks (Hadoop, Spark, Spark SQL, Spark MLlib).
-- To compare single-machine and distributed analytics pipelines across different data sizes, file formats, hardware configurations, and deployment environments (local and cloud).
-- To derive evidence-based guidelines for determining when single-machine analytics tools are sufficient and when distributed big-data frameworks become the more appropriate choice.
+- To evaluate the performance, scalability, and cost-efficiency of traditional analytics tools (Pandas, Pandas SQL, Scikit-learn) versus distributed big-data frameworks (Hadoop, Spark, Spark SQL, Spark MLlib) across data sizes, file formats, configurations and deployment environments (local and cloud)
+- To compare traditional and distributed data analytics stacks and analyse their respective advantages and disadvantages in both local and cloud environments
+- To derive evidence-based guidelines for determining when traditional single-machine analytics tools should be used and when distributed big-data frameworks become the more appropriate choice  
 
 ---
 
@@ -32,16 +32,16 @@ The evaluation spans the full analytics pipeline, from data ingestion to model t
 ### Single-Machine Analytics Pipeline
 - Pandas for data loading and manipulation
 - Pandas SQL for query execution
-- Scikit-learn for model training (Linear Regression, Ridge, Lasso)
+- Scikit-learn for model training
 
 ### Distributed Analytics Pipeline
 - Apache Spark for distributed data processing
 - Spark SQL for query execution
-- Spark MLlib for model training (Linear Regression with elasticNetParam)
+- Spark MLlib for model training
 
 Experiments are conducted across varying:
 - Data sizes
-- File formats
+- File formats (CSV, Parquet and ORC)
 - Hardware configurations
 - Deployment environments (local and cloud)
 
@@ -53,9 +53,9 @@ Key metrics include execution time, throughput, resource utilisation, scalabilit
 
 The primary dataset used in this research is the **NYC TLC Yellow Trip Record Dataset**, obtained from NYC Open Data.
 
-- The dataset contains no direct personal identifiers.
-- It is publicly available and permitted for academic use.
-- No attempts are made to re-identify individuals or combine data with external sources.
+- The dataset contains neither direct personal identifiers nor sensitive data
+- It is publicly available and permitted for academic use
+- No attempts are made to re-identify individuals or combine data with external sources
 
 ---
 
@@ -63,13 +63,12 @@ The primary dataset used in this research is the **NYC TLC Yellow Trip Record Da
 
 This project is conducted solely for academic purposes and follows institutional ethical guidelines.
 
-- No human participants are involved.
-- Only de-identified public datasets are used.
-- GDPR principles are strictly respected.
-- No sensitive or personal data is collected, processed, or stored.
-- Cloud-based experiments are executed in secure environments using encrypted storage, restricted access controls, and secure network configurations.
-- All cloud resources are terminated and deleted immediately after experimentation to minimise financial and environmental impact.
-- All tools used are open-source and released under permissive licences.
+- Only de-identified public datasets are used
+- GDPR principles are strictly respected
+- No sensitive or personal data is collected, processed, or stored at any stage of the research
+- Cloud-based experiments are executed in secure environments using encrypted storage, restricted access controls, and secure network configurations
+- All cloud resources are terminated immediately after experimentation to minimise financial and environmental impact
+- All tools used are open-source and released under permissive licences
 
 ---
 
